@@ -7,8 +7,8 @@ public class Player {
 	private int posX, posY;
 	private Texture texture;
 
-	public Player(String textureHandle, int posX, int posY) {
-		this.texture = new Texture(textureHandle);
+	public Player(Texture texture, int posX, int posY) {
+		this.texture = texture;
 		this.posX = posX;
 		this.posY = posY;
 	}
@@ -17,8 +17,8 @@ public class Player {
 		return texture;
 	}
 
-	public void setTexture(String textureHandle) {
-		this.texture = new Texture(textureHandle);
+	public void setTexture(Texture texture) {
+		this.texture = texture;
 	}
 
 	public int getPosX() {
